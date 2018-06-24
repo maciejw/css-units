@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://unpkg.com/css-vars-ponyfill@1"></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <style>
+    :root {
+      --unit: 0.8rem;
+      --html-font-size: calc(1.3 * var(--unit));
+      --grid-container-min-width: calc(18.75 * var(--unit));
+      --grid-container-padding: calc(1.25 * var(--unit));
+      --grid-column-padding-right: calc(0.9375 * var(--unit));
+      --form-input-padding: calc(0.75 * var(--unit));
+      --form-input-padding-large: calc(1.25 * var(--unit));
+      --form-input-border-width: calc(0.0625 * var(--unit));
+      --form-input-border-radius: calc(0.25 * var(--unit));
+      --form-input-submit-font-size: calc( 1.5 * var(--unit));
+      --form-container-padding: calc(1.25 * var(--unit));
+      --form-container-border-radius: calc(0.3125 * var(--unit));
+      --form-container-column-margin-top: calc(0.375 * var(--unit));
+    }
+
+    .row.tools {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+  <link rel="stylesheet" href="./src/grid.css">
+  <link rel="stylesheet" href="./src/look.css">
+  <link rel="stylesheet" href="./src/form.css">
+
+  <script src="./src/units.js"></script>
+  <script>
+    cssVars();
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row tools">
+      <div class="col-12">
+        <form onsubmit="return false">
+          <div class="container">
+            <div class="row">
+              <div class="col-25">
+                <label for="units">Base unit</label>
+              </div>
+              <div class="col-75">
+                <base-units />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odio asperiores, nulla qui, soluta earum dolores
+        nam numquam in, ratione facilis impedit quidem non! Quibusdam deleniti ipsam ipsa dolorem asperiores.
+      </div>
+      <div class="col-6">
+        <form>
+          <div class="container">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet pariatur eum delectus, iste modi sapiente aliquam
+        iure corrupti. Eos deleniti nihil expedita quae mollitia incidunt aliquam ipsum, tenetur cum.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quos totam ut autem provident odio fuga at perferendis quam
+          aspernatur eius facilis itaque molestias expedita commodi reiciendis est vero sit?
+        </p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quis voluptate eaque inventore ratione deserunt,
+          rem nobis explicabo adipisci ab nisi quibusdam consectetur laborum, aspernatur blanditiis recusandae sunt sapiente
+          quia.
+        </p>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus quaerat magni ducimus veritatis qui ipsam
+          perspiciatis! Doloribus dicta perspiciatis optio tenetur veniam magnam enim delectus, porro omnis sed. Dolor!
+        </p>
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus quaerat magni ducimus veritatis qui ipsam
+          perspiciatis! Doloribus dicta perspiciatis optio tenetur veniam magnam enim delectus, porro omnis sed. Dolor!
+        </p>
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus quaerat magni ducimus veritatis qui ipsam
+          perspiciatis! Doloribus dicta perspiciatis optio tenetur veniam magnam enim delectus, porro omnis sed. Dolor!
+        </p>
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus quaerat magni ducimus veritatis qui ipsam
+          perspiciatis! Doloribus dicta perspiciatis optio tenetur veniam magnam enim delectus, porro omnis sed. Dolor!
+        </p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quis voluptate eaque inventore ratione deserunt,
+          rem nobis explicabo adipisci ab nisi quibusdam consectetur laborum, aspernatur blanditiis recusandae sunt sapiente
+          quia.
+        </p>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus quaerat magni ducimus veritatis qui ipsam
+          perspiciatis! Doloribus dicta perspiciatis optio tenetur veniam magnam enim delectus, porro omnis sed. Dolor!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

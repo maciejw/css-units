@@ -1,0 +1,69 @@
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: var(--form-input-padding);
+  border: var(--form-input-border-width) solid #ccc;
+  border-radius: var(--form-input-border-radius);
+  resize: vertical;
+}
+
+label {
+  padding: var(--form-input-padding);
+  padding-left: 0;
+  display: inline-block;
+}
+
+button[type='submit'],
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: var(--form-input-padding) var(--form-input-padding-large);
+  border: none;
+  border-radius: var(--form-input-border-radius);
+  cursor: pointer;
+  float: right;
+  font-size: var(--form-input-submit-font-size);
+  margin-top: var(--form-container-column-margin-top);
+}
+
+button[type='submit']:hover,
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+form .container {
+  border-radius: var(--form-container-border-radius);
+  background-color: #f2f2f2;
+  padding: var(--form-container-padding);
+}
+
+form .container .col-25 {
+  width: 25%;
+}
+
+form .container .col-75 {
+  width: 75%;
+}
+
+form .container [class*='col-'] {
+  float: left;
+}
+form .container [class*='col-'],
+form .container input[type='submit'] {
+  margin-top: var(--form-container-column-margin-top);
+}
+
+form .container .row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 37.5em) {
+  form .container [class*='col-'],
+  form .container input[type='submit'] {
+    margin-top: 0;
+    width: 100%;
+  }
+}
